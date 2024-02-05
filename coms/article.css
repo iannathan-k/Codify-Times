@@ -1,0 +1,135 @@
+.logo {
+    font-size: 5em;
+}
+
+header, footer {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: lightgray;
+  color: black;
+  padding: 1%;
+}
+
+footer > h4 {
+  margin: 1%;
+}
+
+.heading {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+img {
+  width: 100%;
+}
+
+.content {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: small;
+  font-weight: normal;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 10% 10% 10%;
+  text-align: center;
+  height: 3em;
+  position: sticky;
+  top: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: lightgray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.nav > a {
+  color: black;
+  display: grid;
+  align-items: center;
+  min-width: fit-content;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.nav > a:hover:not(.openPage) {
+  color: white;
+  transition: color 0.1s;
+  background-color: darkgray;
+  transition: background-color 0.1s;
+}
+
+.openPage { 
+  background-color: darkgrey;
+}
+
+.openPage:hover {
+  color: white;
+  transition: color 0.1s;
+  background-color: gray;
+  transition: background-color 0.1s;
+}
+
+input {
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  border: none;
+  font-size: medium;
+  padding: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+input:hover {
+  background-color: gray;
+  transition: background-color 0.1s;
+}
+
+@media screen and (max-width: 750px) {
+
+  input {
+    margin-bottom: 10%;
+    padding: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .nav {
+    margin-left: 0;
+    margin-right: 0;
+    grid-template-columns: auto auto auto;
+  }
+
+  footer {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 5%;
+    column-gap: 5%;
+  }
+
+  footer > h4 {
+    margin: 2%;
+  }
+
+  .overlay {
+    top: 20%;
+  }
+}
