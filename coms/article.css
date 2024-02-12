@@ -113,16 +113,17 @@ input:hover {
   }
 
   .nav {
-    margin-left: 0;
-    margin-right: 0;
     grid-template-columns: auto auto auto;
   }
 
   footer {
-    margin-left: 0;
-    margin-right: 0;
     padding: 5%;
     column-gap: 5%;
+  }
+
+  .nav, footer {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   footer > h4 {

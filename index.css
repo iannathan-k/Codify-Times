@@ -26,6 +26,7 @@ section {
   margin-top: 5%;
   margin-bottom: 5%;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 1.4vw;
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 5%;
@@ -110,14 +111,10 @@ input:hover {
   }
 
   .nav {
-    margin-left: 0;
-    margin-right: 0;
     grid-template-columns: auto auto auto;
   }
 
   footer {
-    margin-left: 0;
-    margin-right: 0;
     padding: 5%;
     column-gap: 5%;
   }
@@ -128,5 +125,10 @@ input:hover {
 
   .overlay {
     top: 20%;
+  }
+
+  .nav, footer {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
